@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow-x: hidden;">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>My Orders</title>
+     <link rel="stylesheet" href="../Asset/Css/bootstrap-5.3.3/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../Asset/Css/style.css">
+     <link rel="stylesheet" href="../Asset/Css/header.css">
+     <link rel="stylesheet" href="../fontawesome-free-5.15.4-web/css/all.min.css">
+</head>
+     <body style="background: rgb(223, 221, 221);">
+     
+     <article id="header"></article>
+  <div class="px-4"><h1 class="h1">My Orders</h1> </div>
+<div class="container" id="orderContainer">
+
+<!--single Card -->
+     <article class="card mb-5">
+     <div class="card-header d-flex justify-content-between align-items-center flex-wrap">
+        <section class="d-flex gap-3 flex-wrap align-items-center">
+          <p class="px-4 py-2" style="background: rgb(226, 225, 225); border-radius:20px;"><b>Order</b> <span class="text-primary">#1234567894</span></p>
+          <p class="text-mute">Order Placed: Thu, 17th April 2024</p>
+        </section>
+        <button class="px-4 py-2" style="background:orange; border: none; border-radius: 20px; font-size: 0.8rem;">
+<i class="fas fa-chevron-right"><b>Track Order</b></i>
+        </button>
+     </div>
+
+<div class="card-body">
+     <section class="row">
+          <div class="col-6 row">
+<div class="col-5">
+     <img src="../Asset/image/dress2.jpg" alt="" class="img-thumbnail" style="width: 100px; height: 130px;">
+</div>
+<div class="col-7">
+     <h6 class="h6">Lorem, ipsum.</h6>
+     <small class="text-mute">By: Gemma</small>
+</div>
+</div>
+<div class="col-6 row">
+     <div class="col-md-6">
+          <small class="text-mute">
+               Status
+          </small>
+          <h4 class="h4 text-warning">
+               In-Transit
+          </h4>
+     </div>
+     <div class="col-md-6">
+          <small class="text-mute">
+               Deliverd on
+          </small>
+          <h4 class="h4 text-dark">
+               24th January,2025
+          </h4>
+     </div>
+</div>
+     </section>
+</div>
+
+</article>
+<!--End of Single Card-->
+</div>
+
+
+
+
+
+
+     <script src="../Asset/js/jquery.js"></script> 
+     <script src="../Asset/js/products.js"></script> 
+     <script src="../Asset/Css/bootstrap-5.3.3/dist/js/bootstrap.js"></script>
+     <script src="../Asset/Css/bootstrap-5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="../Asset/Css/bootstrap-5.3.3/js/src/carousel.js"></script>
+     <script src="../Asset/js/singleProduct.js"></script>
+      <script src="../Asset/js/whistlist.js"></script>
+      <script src="../Asset/js/checkout.js"></script>
+      <script src="../Asset/js/myorders.js"></script>
+      <script>
+          $(document).ready(function(){
+               $('.dropdown-hover').hover(function(){
+                    $(this).find('.dropdown-menu').stop
+                    (true, true).slideDown(300)
+               },
+               function(){
+                    $(this).find('.dropdown-menu').stop
+                    (true, true).slideUp(300)
+               },
+               )
+     $('.dropdown-menu').click(function(e){
+     e.stopPropagation();
+     })
+          })
+     </script>
+</body>
+</html>

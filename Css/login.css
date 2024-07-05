@@ -1,0 +1,112 @@
+*{
+     margin: 0;
+     padding: 0;
+     scroll-behavior: smooth;
+     border: 0;
+}
+body{
+     overflow-x: hidden;
+}
+
+
+#pan{
+     font-size: 3rem;
+     color: white;
+     text-align: center;
+}
+span{
+     font-size: 1.5rem;
+}
+
+#get{
+     background-color: skyblue;
+     background-size: cover;
+}
+
+
+.mine{
+     display: flex;
+     grid-template-columns: repeat(4,1fr);
+     gap: 18px;
+     justify-content: space-evenly;
+     font-weight: bold;
+     
+}
+
+.mine h4{
+     font-size: 1rem
+}
+
+.mint h4{
+     font-size: 15px;
+}
+.card{
+   width: 400px;
+}
+a{
+  text-decoration: none;   
+}
+#add{
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: space-evenly;
+     margin-top: 30px;
+}
+#at{
+     width: 50px;
+     height: 40px;
+     border-radius: 5px;
+text-align:center ;
+padding: 10px;
+display: inline;
+}
+.sub3{
+max-width: 600px;
+max-height: 400px;
+}
+
+a:hover{
+     color: red;
+}
+
+@media screen and (max-width: 768px) {
+/* p{
+     background: url(../image/dress.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     width: 100%;
+     height: max(200px);
+     font-size: 2.5rem;
+     color: white;
+} */
+#mark{
+     max-width: 570px;
+}
+
+/* .sub2{
+     display:block;
+      text-align: center;
+      margin: auto;
+
+} */
+.sub2 i{
+     align-items: center;
+}
+
+
+/* REGISTER */
+
+.add img{
+     overflow-x: hidden;  
+     margin: auto;
+}
+/* REGISTER END */
+
+/* CONTACT */
+.menu{
+     display: flex;
+     flex-wrap: wrap;
+}
+/* CONTACT END */
+}

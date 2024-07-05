@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow-x: hidden;">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="stylesheet" href="../Asset/Css/bootstrap-5.3.3/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../Asset/Css/style.css">
+     <link rel="stylesheet" href="../Asset/Css/header.css">
+     <link rel="stylesheet" href="../fontawesome-free-5.15.4-web/css/all.min.css">
+</head>
+<body>
+     <article id="header"></article>
+    
+     <section>
+
+<main class="container-fluid" style="background: rgba(243, 241, 241, 0.7); min-height: 100vh;">
+<div class="d-flex align-items-center justify-content-center flex-column">
+     <h3 class="h3">CHECKOUT</h3>
+     <h6 class="h6"><i class="i">Cancel Anytime - Free Worldwide Shipping</i></h6>
+</div>
+
+     <form action="" class="checkOutForm">
+          <section class="row">
+
+               <article class="col-md-8">
+                    <div class="card p-2">
+                         <fieldset>
+                              <legend>
+                                   <h3 class="h3">1. Personal Information</h3>
+                              </legend>
+                              <section class="row">
+                                   <div class="form-group col-6">
+                                        <label for="firstName" class="form-label">First Name</label>
+                                        <input type="text"name="firstName" id="firstName" class="form-control" placeholder="first Name">
+                                   </div>
+               
+                                   <div class="form-group col-6">
+                                        <label for="LastName" class="form-label">Last Name</label>
+                                        <input type="text"name="lastName" id="lastName" class="form-control" placeholder="last Name">
+                                   </div>
+
+                                   <div class="form-group col-12">
+                                        <label for="email" class="form-label">Email Address</label>
+                                        <input type="text"name="emailAddress" id="email" class="form-control" placeholder="Email Address">
+                                   </div>
+                              </section>
+                              </fieldset>
+                    </div>
+               </article>
+               <article class="col-md-8">
+                    <div class="card p-2 mt-2">
+                         <fieldset>
+                              <legend>
+                                   <h3 class="h3">2. Shipping Address</h3>
+                              </legend>
+                              </fieldset>
+                              <section class="row">
+                                   <div class="form-group col-6">
+                                        <label for="addressLine1" class="form-label">Address Line 1</label>
+                                        <input type="text"name="addressLine1" id="address1" class="form-control" placeholder="Address Line 1">
+                                   </div>
+               
+                                   <div class="form-group col-6">
+                                        <label for="addressLine2" class="form-label">Address Line 2</label>
+                                        <input type="text"name="addressLine2" id="address2" class="form-control" placeholder="Address Line 2">
+                                   </div>
+
+                                   <div class="form-group col-6">
+                                        <label for="city" class="form-label">City</label>
+                                        <input type="text"name="city" id="city" class="form-control" placeholder="City">
+                                   </div>
+                                   <div class="form-group col-6">
+                                        <label for="state" class="form-label">State</label>
+                                        <input type="text"name="state" id="state" class="form-control" placeholder="State">
+                                   </div>
+
+                                   <div class="form-group col-6">
+                                        <label for="country" class="form-label">Country</label>
+                                        <input type="text"name="country" id="country" class="form-control"placeholder="Country">
+                                        </div>
+                                        <div class="form-group col-6">
+                                             <label for="zip" class="form-label">Zip Code</label>
+                                             <input type="number"name="zip" id="zip" class="form-control" placeholder="Zip Code">
+                                        </div>
+                              </section>
+                    </div>
+                    <!-- END OF PERSONAL INFORMATION -->
+               </article>
+               <article class="col-md-4 mt-3">
+                    <div class="card p-2">
+                         <h4 class="h4 text-center">Order Summary</h4>
+                         <section class="d-flex justify-content-between">
+                              <p><b>Number of Products</b></p>
+                              <p><b id="noProductItems">₦20</b></p>
+                         </section>
+                         <section class="d-flex justify-content-between">
+                              <p><b>Total Quantity</b></p>
+                              <p><b id="productqty">₦20</b></p>
+                         </section>
+                         <hr>
+                         <section class="d-flex justify-content-between">
+                              <p><b>Sub Total</b></p>
+                              <p><b id="subTotal">₦3000</b></p>
+                         </section>
+                         <section class="d-flex justify-content-between">
+                              <p><b>Shipping</b></p>
+                              <p><b id="shipping">₦20</b></p>
+                         </section>
+                         <section class="d-flex justify-content-between">
+                              <p><b>Estimated Tax</b></p>
+                              <p><b id="tax">₦20</b></p>
+                         </section>
+                         <hr>
+                         <section class="d-flex justify-content-between">
+                              <h3 class="h3"><b>Total</b></h3>
+                              <h3 class="h3"><b id="totalPrice">₦3040</b></h3>
+                         </section>
+                    </div>
+                    <button class="btn btn-primary w-100 mt-2 my-3" id="checkoutBtn"><b>Checkout</b></button>
+                    
+               </article>
+               </section>
+     </form>
+</main>
+</section>
+
+     <script src="../Asset/js/products.js"></script>
+     <script src="../Asset/js/jquery.js"></script>
+     <script src="../Asset/js/singleProduct.js"></script>
+     <script src="../Asset/Css/bootstrap-5.3.3/dist/js/bootstrap.js"></script>
+     <script src="../Asset/Css/bootstrap-5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+     <script src="../Asset/Css/bootstrap-5.3.3/js/src/carousel.js"></script>
+     <script src="../Asset/js/checkout.js"></script>
+     <script src="../Asset/js/myorders.js"></script>
+     <!-- <script type="module" src="../Asset/js/products.js"></script> -->
+     <script>
+      $(document).ready(function(){
+           $('.dropdown-hover').hover(function(){
+                $(this).find('.dropdown-menu').stop
+                (true, true).slideDown(300)
+           },
+           function(){
+                $(this).find('.dropdown-menu').stop
+                (true, true).slideUp(300)
+           },
+           )
+ $('.dropdown-menu').click(function(e){
+ e.stopPropagation();
+ })
+      })
+ </script>
+</body>
+</html>

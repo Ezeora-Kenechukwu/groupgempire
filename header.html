@@ -1,0 +1,288 @@
+<header class="header bg-primary" id="header">
+     
+     <div class="d-flex align-items-center justify-content-between">
+          <a href="" class="btn text-white pl-md-5 d-block" >Need Help? 01878136530</a>
+           
+    <nav class="navbar navbar-expand-sm navbar-dark">
+
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+     <span class="navbar-toggler-icon"></span>
+     
+   </button>
+
+   <div class="collapse navbar-collapse" id="collapsibleNavbar">
+     <ul class="navbar-nav">
+          <li class="nav-item">
+               <a href="../pages/myorders.html" class="nav-link text-white">Order Tracking</a>
+          </li>
+          <li class="nav-item">
+               <a href="../pages/Faq.html" class="nav-link text-white">FAQs</a>
+          </li>
+          <li class="nav-item">
+               <a href="../pages/about.html" class="nav-link text-white">About Us</a>
+          </li>
+          <li class="nav-item">
+               <a href="../pages/contactUs.html" class="nav-link text-white">Contact Us</a>
+          </li>
+     </ul>
+   </div>
+    </nav>
+     </div>
+          <hr style="border-bottom: 2px solid white !important; margin-top:-5px;margin-bottom: 10px !important;">
+    
+     <div class="d-flex px-7" style="text-align: center; justify-content: space-evenly;">
+          <h1 class="h1">
+               <a href="../index.html" class="text-dark px-2" style="text-decoration: none; font-weight: bolder;font-family: fantasy;">Group G <span class="text-warning px-2" style="font-size: 25px;">Empire</span></a>
+          </h1>
+          <article class="bg-white pl-2 d-flex flex-row align-items-center" id="navSearch" style="border-radius: 10px; gap: 10px;">
+<select name="" id="navCategory" class="navCategory" style="border: none;outline: none;">
+<option value="">All Category</option> 
+</select>
+<div class="py-2">
+<input type="text" name="" class="form-control " id="" style="border: none;outline: none; border-left: 1px solid gray;" placeholder="I'm shopping for.....">
+</div>
+
+<button class="searchBtn">
+<i class="fas fa-search"></i>
+</button>
+          </article>
+               <article class="flex-wrap d-flex align-items-center gap-5 px-4" style="justify-content: right;">
+                    <!-- *******************LOGIN LINK -->
+                    <a href="../pages/login.html" class="d-flex align-items-center gap-3">
+                         <span class="text-white" style="font-size: 1.5rem; position: relative;">
+                              <i class="far fa-user"></i></span>
+                              
+                         <div class="d-flex flex-column">
+                              <small class="text-white px-3">Register</small>
+                              <small class="text-white px-3">Login</small>
+                         </div>
+                    </a>
+               
+               <!-- *************END OFLOGIN LINK -->
+
+               <!-- ********************WISHLIST -->
+               <a href="#" class="d-flex align-items-center gap-3">
+                    <span class="text-white" style="font-size: 1.5rem; position: relative;"><i class="far fa-heart"></i>
+                         <small class="rounded-circle bg-warning d-flex align-items-center justify-content-center" style="width:25px; height:25px; position: absolute;top: -10px; left: 10px; font-size: 12px;">0</small>
+                    </span>
+                    <div class="d-flex flex-column">
+                         <small class="text-white">Favorite</small>
+                         <small class="text-white">My Wishlist</small>
+                    </div>
+               </a>
+               <!-- ************************END OF WHISLIST -->
+
+
+               <!-- ********************CART LINK -->
+               <div class="dropdown dropdown-hover">
+               <a class="d-flex align-items-center gap-3 dropdown-toggle" role="button" id="dropdownMenuButton" aria-expanded="false">
+                    <span class="text-white" style="font-size: 1.5rem; position: relative;"><i class="fas fa-shopping-cart"></i>
+                         <small class="rounded-circle bg-warning d-flex align-items-center justify-content-center" style="width:25px; height:25px; position: absolute;top: -10px; left: 10px; font-size: 12px;" id="headerquantity">0</small>
+                    </span>
+                    <div class="d-flex flex-column">
+                         <small class="text-white">Your Cart</small>
+                         <small class="text-white" id="headeramount">&#x20A6;0.00</small>
+                    </div>
+               </a>
+               <div class="dropdown-menu dropdown-menu-start" style="width: 200px; height: 300px; overflow-y: auto; left: -70px; z-index:50;" aria-labelledby="dropdownMenuButton">
+                    <h4 class="text-Center" style="text-align: center;">Cart Items</h4>
+                    <hr>
+                       <div class="" id="cartItemContainer">
+                    <section class=" section d-flex px-2 align-items-center gap-2 justify-content-between">
+                         <img src="../Asset/image/dress1.jpg" alt="" class="rounded-circle" style="width: 30px; height: 30px;">
+                         <div class="d-flex flex-column">
+                              <small class="small">Food Items</small>
+                              <button class="text-mute btn" id="delete_btn" style="padding: 0px !important; margin: 0px !important; margin-top:-10px !important; font-size: 0.8rem;">remove</button>
+                         </div>
+                         <div class="d-flex flex-column gap-2 align-items-space-between">
+                         <button class="btn" style= "padding:0px !important; margin: 0px !important; margin-top:-10px !important; font-size: 0.8rem;"><i class="fas fa-chevron-up increment-btn"></i></button>
+        <!-- <input type="number" class="cartSingleQuantity text-center" style="width: 50px;padding: 0px; border: none; outline: none;" disabled value="1"> -->
+        <small class="small" data-qty="1" >1</small>
+                         <button class="btn"style="padding: 0px !important; margin: 0px !important; margin-top:-10px !important; font-size: 0.8rem;"><i class="fas fa-chevron-down decrement-btn"></i></button>
+                         </div>
+                    </section>
+               </div>  
+                    <hr>
+
+                    <div class="d-flex  flex-column">
+                         <p class="text-muted small h3 px-4 my-2" id="totalCartAmount">Total Amount:</p>
+<p class="text-muted small h3 px-4 my-2" id="totalCartQuantity">Quantity:</p>
+                    </div>
+                    <section class="d-flex justify-content-between align-items-center">
+                         <a href="../pages/checkout.html" class="btn btn-warning btn-sm" id="order_now">Order Now</a>
+                         <button class="btn btn-danger btn-sm" id="clearCart">Clear Cart</button>
+                    </section>
+               </div>
+
+          </div>
+
+               <!-- ************************END OF CART LINK -->
+          </article>  
+     </div>
+     <hr style="border-bottom: 1px solid white !important;margin-bottom: 10px !important;">     
+</header>
+<script>
+          $('.dropdown-hover').hover(function(){
+               $(this).find('.dropdown-menu').stop
+               (true, true).slideDown(300)
+          },
+          function() {
+               $(this).find('.dropdown-menu').stop
+               (true, true).slideUp(300)
+          }
+          );   
+$('.dropdown-menu').click(function(e){
+e.stopPropagation();
+})
+
+$("#navCategory").on("change" , function(){
+          const cat =$(this).val()
+          const data = makeRequest(`https://fakestoreapi.com/products${cat =="all"? '': `/category/${cat}`}`,
+          function(response){
+               console.log(response);
+               DisplayedProducts(response)
+          },
+          function(error){
+               alert(error.responseText)
+          }
+
+          )
+     });
+     function makeRequest(url,successCallback,errorCallback,method="get",data=null,){
+       $.ajax({
+            url: url,
+            method:method,
+               data:data,
+               success: (data) =>{
+                 var products = data
+  
+                 successCallback(products)
+               },
+               error: function(error) {
+                 errorCallback(error)
+               },
+              
+       });
+      }
+      function DisplayedProducts(products) {
+     const container = $("#productsContainer")
+
+     container.html( products.map(item => {
+          const {rate} = item.rating
+          return `
+      <article class="card" style="min-width: 300px;max-width: 400px;"> 
+<img src="${item.image}" alt="" class="card-img-top">
+<div class="card-body">
+     <h4 class="card-title">${item.title}</h4>
+     <div class=" justify-content-between align-items-center">
+          <div class="d-flex justify-content-around align-items-center  text-warning">
+          ${
+               DisplayedRating(rate)
+          }
+          
+          <p class="card-text">₦${item.price}</p>
+     </div>
+     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, commodi?</p>
+</div>
+<div class="card-footer d-flex justify-content-end bg-dark">
+     <a href="./pages/product.html?id=${item.id}" class="btn btn-warning">
+     <i class="fas fa-shopping-cart">Add to Cart</i></a>
+</div>
+        </article>  
+          `
+     }).join(''))
+}
+
+function DisplayedRating(rate){
+          return rate < 0.5 ? 
+          `
+           <i class="far fa-star"></i>
+           <i class="far fa-star"></i>
+           <i class="far fa-star"></i>
+           <i class="far fa-star"></i>
+           <i class="far fa-star"></i>
+           `
+           : 
+           rate >= 0.5 && rate < 1 ?
+            `
+           <i class="fas fa-star-half"></i>
+           <i class="far fa-star"></i>
+           <i class="far fa-star"></i>
+           <i class="far fa-star"></i>
+           <i class="far fa-star"></i>
+           `
+           :
+           rate >= 1 && rate < 1.5 ?
+           `
+           <si class="fas fa-star"></si>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           ` 
+           :
+            rate >= 1.5 && rate < 2 ?
+             `
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star-half"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           `
+           :
+           rate >=2 && rate < 2.5 ?
+           `
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="far fa-star"></i>
+           <i class="far fa-star"></i>
+           <i class="far fa-star"></i>
+           `
+           :
+           rate >=2.5 && rate <3 ?
+           `
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star-half"></i>
+           <i class="far fa-star"></i>
+           <i class="far fa-star"></i>
+           `
+           :
+           rate >=3 && rate <3.5?
+           `
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="far fa-star"></i>
+           <i class="far fa-star"></i>
+           `
+           :
+           rate >=3.5  && rate < 4 ?
+           `
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star-half"></i>
+           <i class="far fa-star"></i>
+           `
+           :
+           rate >=4.5 && rate < 5?
+           `
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star-half"></i>
+           `
+           :
+           `
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           `
+}
+</script>
